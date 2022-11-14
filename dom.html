@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM</title>
+</head>
+
+<style>
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin-left: 10px;
+    }
+
+
+    #li2 {
+        margin-left: 3px;
+    }
+
+    #li3 {
+
+        margin-left: 3px;
+    }
+</style>
+
+<body>
+
+    <input type="Number" id="text1">
+    <input type="text" id="text2">
+    <input type="text" id="text3">
+    <button id="buton" type="button" style="margin-left:10px; width: 60px;">Click</button> <BR>
+    </BR>
+    <strong> ID NAME SURNAME</strong>
+
+    <ul id="ule">
+
+        <li id="li1"></li>
+        <li id="li2"></li>
+        <li id="li3"></li>
+    </ul>
+
+    <script>
+
+        let input1 = document.getElementById('text1')
+        let input2 = document.getElementById('text2')
+        let input3 = document.getElementById('text3')
+        let buton = document.querySelector('buton')
+        let ul = document.getElementById('ule')
+        document.getElementById('buton').addEventListener('click', function () {
+            let li = document.createElement('li')
+
+            li.innerHTML = input1.value
+
+            ul.appendChild(li)
+
+
+        })
+        document.getElementById('buton').addEventListener('click', function () {
+            let li = document.createElement('li')
+
+            li.innerHTML = input2.value
+
+            ul.appendChild(li)
+
+
+        })
+
+        document.getElementById('buton').addEventListener('click', function () {
+            let li = document.createElement('li')
+
+            li.innerHTML = input3.value
+
+            ul.appendChild(li)
+
+
+        })
+    </script>
+
+</body>
+
+</html>
